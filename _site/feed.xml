@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Caisj Blog</title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 17 Jun 2019 15:37:40 +0900</pubDate>
+    <lastBuildDate>Mon, 17 Jun 2019 15:37:40 +0900</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>6月计划</title>
+        <description>&lt;h2 id=&quot;空间&quot;&gt;空间&lt;/h2&gt;
+&lt;p&gt;这是一个独立的空间，可以记录生活的点点滴滴。真好。&lt;/p&gt;
+
+&lt;h2 id=&quot;计划&quot;&gt;计划&lt;/h2&gt;
+&lt;p&gt;现在的我其实很忙，但是我又忙不起来，啥都不想做。我想把所有要做的事情再列一下&lt;br /&gt;然后明确到底要做什么内容&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;研究生课题（这个可能可以再细分，但是这个是我现在一直在做调查，但是真的实施和写论文，实在有点工程量太大，所以就有点不知所措）&lt;/li&gt;
+  &lt;li&gt;机器学习，强化学习，深度学习 的学习（有点迷茫，不知道以后的发展是如何，总感觉ai是趋势，总感觉要学啊）&lt;/li&gt;
+  &lt;li&gt;锻炼（锻炼现在是很认真的在坚持，说实话效果不明显，理由我也知道，时间还不够不能够改变，饮食习惯是根本，但是不吃糖多吃蔬菜实在是吃力啊）&lt;/li&gt;
+  &lt;li&gt;女朋友(这个东西，年纪大了，肯定是需要的，我也有计划大概就是明后年，30岁还没经验实在有点说不过去，但是现在真的是没什么时间)&lt;/li&gt;
+  &lt;li&gt;旅游(想出去走的，没有伴，又没有动力，或者说是没意思，迟迟没有计划，emm，等想找女朋友的时候吧，再考虑这个问题)&lt;/li&gt;
+  &lt;li&gt;睡觉(这东西，也要计划吗，感觉还是要的，现在平时是不玩游戏了，但是还是1点多睡觉，第二天早饭基本吃不到，选择二天是早睡日，大概就是周二和周日把)&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Thu, 13 Jun 2019 20:51:00 +0900</pubDate>
+        <link>http://localhost:4000/2019/06/13/plan/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/13/plan/</guid>
+        
+        <category>生活</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>第一篇</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“猴哥牛逼. ”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;口号&quot;&gt;口号&lt;/h1&gt;
+&lt;p&gt;每天起床第一句，猴哥牛逼&lt;/p&gt;
+
+&lt;p&gt;一阵瞎搞瞎弄之后，我也总算建立完成了一个能看的网站吧，虽然设计是用别人的。
+差不多了呀。&lt;/p&gt;
+</description>
+        <pubDate>Wed, 12 Jun 2019 22:51:00 +0900</pubDate>
+        <link>http://localhost:4000/2019/06/12/hello2019/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/12/hello2019/</guid>
+        
+        <category>生活</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
