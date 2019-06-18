@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: caisjtest@gmail.com
 description: ""
 keyword: ""
-url: "http://caisj.github.io"              # your host, for absolute URL
+url: "http://caisj2016.github.io"              # your host, for absolute URL
 #baseurl: "/saiblog-boilerplate"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -62,7 +62,7 @@ kramdown:
 #ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 #ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: http://caisj.github.io
+ga_domain: http://caisj2016.github.io
 
 
 

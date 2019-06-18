@@ -5,9 +5,42 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 17 Jun 2019 15:46:09 +0900</pubDate>
-    <lastBuildDate>Mon, 17 Jun 2019 15:46:09 +0900</lastBuildDate>
+    <pubDate>Tue, 18 Jun 2019 10:54:02 +0900</pubDate>
+    <lastBuildDate>Tue, 18 Jun 2019 10:54:02 +0900</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>AR介绍</title>
+        <description>&lt;h2 id=&quot;ar识别方法类型&quot;&gt;AR识别方法/类型&lt;/h2&gt;
+&lt;p&gt;AR是Augmented Reality的简称，现实增强的技术。&lt;/p&gt;
+
+&lt;h3 id=&quot;位置认知型ar&quot;&gt;位置认知型AR&lt;/h3&gt;
+&lt;p&gt;通过手机等一些设备的GPS功能，获取位置的信息，显示AR。
+&lt;img src=&quot;/img/in-post/AR/location.jpg&quot; alt=&quot;位置认知型&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;marker型图像识别ar&quot;&gt;Marker型图像识别AR&lt;/h3&gt;
+&lt;p&gt;通过识别事先登录的Marker型图像，获取信息，显示AR。
+因为有固定的模型要求，所以识别起来比较快，稳定性高。
+&lt;img src=&quot;/img/in-post/AR/Marker-1.jpg&quot; alt=&quot;Marker型图像&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;无marker型图像识别ar&quot;&gt;无Marker型图像识别AR&lt;/h3&gt;
+&lt;p&gt;通过识别自由平面插图和图像（静止图像）的特征，获取信息，显示AR。
+图像识别，没有固定的模型要求。&lt;/p&gt;
+
+&lt;h3 id=&quot;3d空间识别ar&quot;&gt;3D，空间识别AR&lt;/h3&gt;
+&lt;p&gt;通过识别3D模型（三维空间），获取信息，显示AR。
+因为三维识别比较麻烦，现在主流的还是使用穿戴设备。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 17 Jun 2019 17:42:00 +0900</pubDate>
+        <link>http://localhost:4000/2019/06/17/AR/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/17/AR/</guid>
+        
+        <category>技术</category>
+        
+        <category>AR</category>
+        
+        
+      </item>
     
       <item>
         <title>6月计划</title>

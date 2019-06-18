@@ -1,0 +1,32 @@
+---
+layout:     post
+title:      "AR介绍"
+subtitle:   "识别方法/类型"
+date:       2019-06-17 08:42:00
+author:     "Cai"
+header-img: "img/pexels-photo-2409681.jpeg"
+tags:
+    - 技术
+    - AR
+---
+
+## AR识别方法/类型
+AR是Augmented Reality的简称，现实增强的技术。
+
+
+### 位置认知型AR
+通过手机等一些设备的GPS功能，获取位置的信息，显示AR。
+![位置认知型](/img/in-post/AR/location.jpg)
+
+### Marker型图像识别AR
+通过识别事先登录的Marker型图像，获取信息，显示AR。
+因为有固定的模型要求，所以识别起来比较快，稳定性高。
+![Marker型图像](/img/in-post/AR/Marker-1.jpg)
+
+### 无Marker型图像识别AR
+通过识别自由平面插图和图像（静止图像）的特征，获取信息，显示AR。
+图像识别，没有固定的模型要求。
+
+### 3D，空间识别AR
+通过识别3D模型（三维空间），获取信息，显示AR。
+因为三维识别比较麻烦，现在主流的还是使用穿戴设备。
