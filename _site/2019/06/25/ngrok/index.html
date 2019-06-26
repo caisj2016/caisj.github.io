@@ -10,9 +10,9 @@
     <meta name="keyword"  content="">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>蔡的博客 | Caisj Blog</title>
+    <title>ngrok的使用 技术分享 1 - 蔡的博客 | Caisj Blog</title>
 
-    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="canonical" href="http://localhost:4000/2019/06/25/ngrok/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -123,258 +123,179 @@
 </script>
 
 
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/home-bg-o.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/img/home-bg-o.jpg')
+    }
+</style>
+<header class="intro-header" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>Caisj Blog</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading"></span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/archive/#白嫖" title="白嫖">白嫖</a>
+                        
+                        <a class="tag" href="/archive/#技术" title="技术">技术</a>
+                        
+                    </div>
+                    <h1>ngrok的使用 技术分享 1</h1>
+                    
+                    
+                    <h2 class="subheading">能白嫖就白嫖</h2>
+                    
+                    <span class="meta">Posted by Cai on June 25, 2019</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-        
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
-<!-- USE SIDEBAR -->
     <!-- Post Container -->
-    		<div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-    			
-<div class="post-preview">
-    <a href="/2019/06/25/ngrok/">
-        <h2 class="post-title">
-            ngrok的使用 技术分享 1
-        </h2>
-        
-        <h3 class="post-subtitle">
-            能白嫖就白嫖
-        </h3>
-        
-        <div class="post-content-preview">
-            前言
-想做一个chat bot，要一个外部公开的域名和服务，网上一查，花生壳，阿里云都要钱，好麻烦呀。
-本着能白嫖就白嫖的想法，在谷歌老师的帮助下，找到了ngrok，内网穿透技术。开心！
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-ngrok是什么
-让你本地localhost，外部能公开访问的转换工具。下面就开始白嫖。
-第一步
-搞个账号   ngrok注册网站
-注册完会得到个authtoken ，这个东西后面要用。
-第二步
-下载ng...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Cai on June 25, 2019
-    </p>
-</div>
-<hr>
+				<h1 id="前言">前言</h1>
+<p>想做一个chat bot，要一个外部公开的域名和服务，网上一查，花生壳，阿里云都要钱，好麻烦呀。
+本着能白嫖就白嫖的想法，在谷歌老师的帮助下，找到了ngrok，内网穿透技术。开心！</p>
 
-<div class="post-preview">
-    <a href="/2019/06/17/AR/">
-        <h2 class="post-title">
-            AR介绍
-        </h2>
-        
-        <h3 class="post-subtitle">
-            识别方法/类型
-        </h3>
-        
-        <div class="post-content-preview">
-            AR识别方法/类型
-AR是Augmented Reality的简称，现实增强的技术。
+<h1 id="ngrok是什么">ngrok是什么</h1>
+<p>让你本地localhost，外部能公开访问的转换工具。下面就开始白嫖。</p>
+<h3 id="第一步">第一步</h3>
+<p>搞个账号   <a href="https://dashboard.ngrok.com/signup">ngrok注册网站</a>
+注册完会得到个authtoken ，这个东西后面要用。</p>
+<h3 id="第二步">第二步</h3>
+<p>下载ngrok工具  <a href="https://ngrok.com/download">ngrok注册网站</a></p>
+<h3 id="第三步">第三步</h3>
+<p>解压ngrok.zip工具</p>
+<h3 id="第四步">第四步</h3>
+<p>启动ngrok.exe
+输入下面指令，{自己的authtoken}就是前面得到那个authtoken<br />
+<code class="highlighter-rouge">$ ngrok authtoken {自己的authtoken}</code></p>
+<h3 id="第五步">第五步</h3>
+<p>启动自己的本地服务，端口号默认是8080<br />
+8080端口向外部公开<br />
+<code class="highlighter-rouge">$ ngrok http 8080</code></p>
 
-位置认知型AR
-通过手机等一些设备的GPS功能，获取位置的信息，显示AR。
+<h3 id="第六步">第六步</h3>
+<p>外网访问，搞定</p>
 
 
-Marker型图像识别AR
-通过识别事先登录的Marker型图像，获取信息，显示AR。
-因为有固定的模型要求，所以识别起来比较快，稳定性高。
+                <hr>
+
+                
 
 
-无Marker型图像识别AR
-通过识别自由平面插图和图像（静止图像）的特征，获取...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Cai on June 17, 2019
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2019/06/13/plan/">
-        <h2 class="post-title">
-            6月计划
-        </h2>
-        
-        <h3 class="post-subtitle">
-             有计划不迷茫
-        </h3>
-        
-        <div class="post-content-preview">
-            空间
-这是一个独立的空间，可以记录生活的点点滴滴。真好。
-
-计划
-现在的我其实很忙，但是我又忙不起来，啥都不想做。我想把所有要做的事情再列一下然后明确到底要做什么内容
-
-  研究生课题（这个可能可以再细分，但是这个是我现在一直在做调查，但是真的实施和写论文，实在有点工程量太大，所以就有点不知所措）
-  机器学习，强化学习，深度学习 的学习（有点迷茫，不知道以后的发展是如何，总感觉ai是趋势，...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Cai on June 13, 2019
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2019/06/12/hello2019/">
-        <h2 class="post-title">
-            第一篇
-        </h2>
-        
-        <h3 class="post-subtitle">
-             新的开始。
-        </h3>
-        
-        <div class="post-content-preview">
-            
-  “猴哥牛逼. ”
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/06/17/AR/" data-toggle="tooltip" data-placement="top" title="AR介绍">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
 
 
-口号
-每天起床第一句，猴哥牛逼
+                
 
-一阵瞎搞瞎弄之后，我也总算建立完成了一个能看的网站吧，虽然设计是用别人的。
-差不多了呀。
+                
 
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Cai on June 12, 2019
-    </p>
-</div>
-<hr>
+            </div>
 
-
-<!-- Pager -->
-
-
-    		</div>
     <!-- Sidebar Container -->
             <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
                 <!-- Featured Tags -->
                 
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/archive/">FEATURED TAGS</a></h5>
                     <div class="tags">
-                        
+        				
                             
-                                <a href="/archive/#生活" title="生活" rel="2">
+                				<a href="/archive/#生活" title="生活" rel="2">
                                     生活
                                 </a>
                             
-                        
+        				
                             
-                                <a href="/archive/#技术" title="技术" rel="2">
+                				<a href="/archive/#技术" title="技术" rel="2">
                                     技术
                                 </a>
                             
-                        
+        				
                             
-                        
+        				
                             
-                        
-                    </div>
+        				
+        			</div>
                 </section>
                 
 
-                <!-- Short About -->
-                <section class="visible-md visible-lg">
-                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
-                    <div class="short-about">
-                        
-                            <img src="/img/gakkismile.jpg" />
-                        
-                        
-                            <p>猴哥牛逼</p>
-                        
-                        <!-- SNS Link -->
-                        <ul class="list-inline">
-                            
-                            
-                            
-                            <li>
-                                <a target="_blank" href="https://www.zhihu.com/people/caisj">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa  fa-stack-1x fa-inverse">知</i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            
-                            <li>
-                                <a target="_blank" href="http://weibo.com/caisj">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            
-                            <li>
-                                <a target="_blank" href="https://www.facebook.com/caisj">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            
-                            <li>
-                                <a target="_blank" href="https://github.com/caisj2016">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </section>
                 <!-- Friends Blog -->
                 
-    		</div>
-        
-	</div>
-</div>
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
 
 
     <!-- Footer -->

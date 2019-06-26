@@ -5,9 +5,47 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 20 Jun 2019 09:41:15 +0900</pubDate>
-    <lastBuildDate>Thu, 20 Jun 2019 09:41:15 +0900</lastBuildDate>
+    <pubDate>Wed, 26 Jun 2019 13:03:41 +0900</pubDate>
+    <lastBuildDate>Wed, 26 Jun 2019 13:03:41 +0900</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>ngrok的使用 技术分享 1</title>
+        <description>&lt;h1 id=&quot;前言&quot;&gt;前言&lt;/h1&gt;
+&lt;p&gt;想做一个chat bot，要一个外部公开的域名和服务，网上一查，花生壳，阿里云都要钱，好麻烦呀。
+本着能白嫖就白嫖的想法，在谷歌老师的帮助下，找到了ngrok，内网穿透技术。开心！&lt;/p&gt;
+
+&lt;h1 id=&quot;ngrok是什么&quot;&gt;ngrok是什么&lt;/h1&gt;
+&lt;p&gt;让你本地localhost，外部能公开访问的转换工具。下面就开始白嫖。&lt;/p&gt;
+&lt;h3 id=&quot;第一步&quot;&gt;第一步&lt;/h3&gt;
+&lt;p&gt;搞个账号   &lt;a href=&quot;https://dashboard.ngrok.com/signup&quot;&gt;ngrok注册网站&lt;/a&gt;
+注册完会得到个authtoken ，这个东西后面要用。&lt;/p&gt;
+&lt;h3 id=&quot;第二步&quot;&gt;第二步&lt;/h3&gt;
+&lt;p&gt;下载ngrok工具  &lt;a href=&quot;https://ngrok.com/download&quot;&gt;ngrok注册网站&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;第三步&quot;&gt;第三步&lt;/h3&gt;
+&lt;p&gt;解压ngrok.zip工具&lt;/p&gt;
+&lt;h3 id=&quot;第四步&quot;&gt;第四步&lt;/h3&gt;
+&lt;p&gt;启动ngrok.exe
+输入下面指令，{自己的authtoken}就是前面得到那个authtoken&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;$ ngrok authtoken {自己的authtoken}&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;第五步&quot;&gt;第五步&lt;/h3&gt;
+&lt;p&gt;启动自己的本地服务，端口号默认是8080&lt;br /&gt;
+8080端口向外部公开&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;$ ngrok http 8080&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;第六步&quot;&gt;第六步&lt;/h3&gt;
+&lt;p&gt;外网访问，搞定&lt;/p&gt;
+</description>
+        <pubDate>Tue, 25 Jun 2019 17:42:00 +0900</pubDate>
+        <link>http://localhost:4000/2019/06/25/ngrok/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/25/ngrok/</guid>
+        
+        <category>白嫖</category>
+        
+        <category>技术</category>
+        
+        
+      </item>
     
       <item>
         <title>AR介绍</title>

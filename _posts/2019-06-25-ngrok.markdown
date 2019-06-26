@@ -1,0 +1,36 @@
+---
+layout:     post
+title:      "ngrok的使用 技术分享 1"
+subtitle:   "能白嫖就白嫖"
+date:       2019-06-25 08:42:00
+author:     "Cai"
+header-img: "img/home-bg-o.jpg"
+tags:
+    - 白嫖
+    - 技术
+
+---
+# 前言
+想做一个chat bot，要一个外部公开的域名和服务，网上一查，花生壳，阿里云都要钱，好麻烦呀。
+本着能白嫖就白嫖的想法，在谷歌老师的帮助下，找到了ngrok，内网穿透技术。开心！
+
+# ngrok是什么
+让你本地localhost，外部能公开访问的转换工具。下面就开始白嫖。
+### 第一步
+搞个账号   [ngrok注册网站](https://dashboard.ngrok.com/signup)
+注册完会得到个authtoken ，这个东西后面要用。
+### 第二步
+下载ngrok工具  [ngrok注册网站](https://ngrok.com/download)
+### 第三步
+解压ngrok.zip工具
+### 第四步
+启动ngrok.exe
+输入下面指令，{自己的authtoken}就是前面得到那个authtoken<br>
+`$ ngrok authtoken {自己的authtoken}`
+### 第五步
+启动自己的本地服务，端口号默认是8080<br>
+8080端口向外部公开<br>
+`$ ngrok http 8080`
+
+### 第六步
+外网访问，搞定
