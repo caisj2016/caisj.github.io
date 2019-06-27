@@ -18,22 +18,36 @@ tags:
 让你本地localhost，外部能公开访问的转换工具。下面就开始白嫖。
 ### 第一步
 搞个账号   [ngrok注册网站](https://dashboard.ngrok.com/signup)
-注册完会得到个authtoken ，这个东西后面要用。
+注册完会得到个`authtoken` ，这个东西后面要用。
 ### 第二步
 下载ngrok工具  [ngrok注册网站](https://ngrok.com/download)
 ### 第三步
 解压ngrok.zip工具
 ### 第四步
 启动ngrok.exe
-输入下面指令，{MyAuthtoken}就是前面得到那个authtoken<br>
-```java
+输入下面指令，`{MyAuthtoken}`替换掉自己的那个`authtoken`<br>
+```ruby
 ngrok authtoken {MyAuthtoken}
 ```
 ### 第五步
-启动自己的本地服务，端口号默认是8080<br>
-8080端口向外部公开<br>
-```java
+启动自己的本地服务，端口号默认是`8080`<br>
+`8080`端口向外部公开<br>
+```ruby
 ngrok http 8080
 ```
 ### 第六步
-外网访问，搞定
+确认出现下面内容，`https://c275e258.ngrok.io` 外网访问，搞定
+``` ruby
+ngrok by @inconshreveable                                                                               (Ctrl+C to quit)
+
+Session Status                online
+Account                       cai (Plan: Free)
+Version                       2.3.30
+Region                        United States (us)
+Web Interface                 http://127.0.0.1:4040
+Forwarding                    http://c275e258.ngrok.io -> http://localhost:8080
+Forwarding                    https://c275e258.ngrok.io -> http://localhost:8080
+
+Connections                   ttl     opn     rt1     rt5     p50     p90
+                              26      0       0.00    0.00    60.90   100.20
+```

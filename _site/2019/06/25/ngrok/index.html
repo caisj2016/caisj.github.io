@@ -176,23 +176,36 @@
 <p>让你本地localhost，外部能公开访问的转换工具。下面就开始白嫖。</p>
 <h3 id="第一步">第一步</h3>
 <p>搞个账号   <a href="https://dashboard.ngrok.com/signup">ngrok注册网站</a>
-注册完会得到个authtoken ，这个东西后面要用。</p>
+注册完会得到个<code class="highlighter-rouge">authtoken</code> ，这个东西后面要用。</p>
 <h3 id="第二步">第二步</h3>
 <p>下载ngrok工具  <a href="https://ngrok.com/download">ngrok注册网站</a></p>
 <h3 id="第三步">第三步</h3>
 <p>解压ngrok.zip工具</p>
 <h3 id="第四步">第四步</h3>
 <p>启动ngrok.exe
-输入下面指令，{MyAuthtoken}就是前面得到那个authtoken<br /></p>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ngrok</span> <span class="n">authtoken</span> <span class="o">{</span><span class="nc">MyAuthtoken</span><span class="o">}</span>
+输入下面指令，<code class="highlighter-rouge">{MyAuthtoken}</code>替换掉自己的那个<code class="highlighter-rouge">authtoken</code><br /></p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ngrok</span> <span class="n">authtoken</span> <span class="p">{</span><span class="no">MyAuthtoken</span><span class="p">}</span>
 </code></pre></div></div>
 <h3 id="第五步">第五步</h3>
-<p>启动自己的本地服务，端口号默认是8080<br />
-8080端口向外部公开<br /></p>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ngrok</span> <span class="n">http</span> <span class="mi">8080</span>
+<p>启动自己的本地服务，端口号默认是<code class="highlighter-rouge">8080</code><br />
+<code class="highlighter-rouge">8080</code>端口向外部公开<br /></p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ngrok</span> <span class="n">http</span> <span class="mi">8080</span>
 </code></pre></div></div>
 <h3 id="第六步">第六步</h3>
-<p>外网访问，搞定</p>
+<p>确认出现下面内容，<code class="highlighter-rouge">https://c275e258.ngrok.io</code> 外网访问，搞定</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ngrok</span> <span class="n">by</span> <span class="vi">@inconshreveable</span>                                                                               <span class="p">(</span><span class="no">Ctrl</span><span class="o">+</span><span class="no">C</span> <span class="n">to</span> <span class="n">quit</span><span class="p">)</span>
+
+<span class="no">Session</span> <span class="no">Status</span>                <span class="n">online</span>
+<span class="no">Account</span>                       <span class="n">cai</span> <span class="p">(</span><span class="no">Plan</span><span class="p">:</span> <span class="no">Free</span><span class="p">)</span>
+<span class="no">Version</span>                       <span class="mf">2.3</span><span class="o">.</span><span class="mi">30</span>
+<span class="no">Region</span>                        <span class="no">United</span> <span class="no">States</span> <span class="p">(</span><span class="n">us</span><span class="p">)</span>
+<span class="no">Web</span> <span class="no">Interface</span>                 <span class="n">http</span><span class="ss">:/</span><span class="o">/</span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">4040</span>
+<span class="no">Forwarding</span>                    <span class="n">http</span><span class="ss">:/</span><span class="o">/</span><span class="n">c275e258</span><span class="p">.</span><span class="nf">ngrok</span><span class="p">.</span><span class="nf">io</span> <span class="o">-&gt;</span> <span class="n">http</span><span class="ss">:/</span><span class="o">/</span><span class="n">localhost</span><span class="p">:</span><span class="mi">8080</span>
+<span class="no">Forwarding</span>                    <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">c275e258</span><span class="p">.</span><span class="nf">ngrok</span><span class="p">.</span><span class="nf">io</span> <span class="o">-&gt;</span> <span class="n">http</span><span class="ss">:/</span><span class="o">/</span><span class="n">localhost</span><span class="p">:</span><span class="mi">8080</span>
+
+<span class="no">Connections</span>                   <span class="n">ttl</span>     <span class="n">opn</span>     <span class="n">rt1</span>     <span class="n">rt5</span>     <span class="n">p50</span>     <span class="n">p90</span>
+                              <span class="mi">26</span>      <span class="mi">0</span>       <span class="mf">0.00</span>    <span class="mf">0.00</span>    <span class="mf">60.90</span>   <span class="mf">100.20</span>
+</code></pre></div></div>
 
 
                 <hr>
