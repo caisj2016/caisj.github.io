@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "ngrok的使用 技术分享 1"
-subtitle:   "能白嫖就白嫖"
+title:      "ngrok的使用"
+subtitle:   "内网穿透技术"
 date:       2019-06-25 08:42:00
 author:     "Cai"
 header-img: "img/home-bg-o.jpg"
