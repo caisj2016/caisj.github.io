@@ -183,13 +183,14 @@
 <p>解压ngrok.zip工具</p>
 <h3 id="第四步">第四步</h3>
 <p>启动ngrok.exe
-输入下面指令，{自己的authtoken}就是前面得到那个authtoken<br />
-<code class="highlighter-rouge">$ ngrok authtoken {自己的authtoken}</code></p>
+输入下面指令，{MyAuthtoken}就是前面得到那个authtoken<br /></p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ngrok</span> <span class="n">authtoken</span> <span class="o">{</span><span class="nc">MyAuthtoken</span><span class="o">}</span>
+</code></pre></div></div>
 <h3 id="第五步">第五步</h3>
 <p>启动自己的本地服务，端口号默认是8080<br />
-8080端口向外部公开<br />
-<code class="highlighter-rouge">$ ngrok http 8080</code></p>
-
+8080端口向外部公开<br /></p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ngrok</span> <span class="n">http</span> <span class="mi">8080</span>
+</code></pre></div></div>
 <h3 id="第六步">第六步</h3>
 <p>外网访问，搞定</p>
 

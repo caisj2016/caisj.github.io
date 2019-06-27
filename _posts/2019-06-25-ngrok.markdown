@@ -25,12 +25,15 @@ tags:
 解压ngrok.zip工具
 ### 第四步
 启动ngrok.exe
-输入下面指令，{自己的authtoken}就是前面得到那个authtoken<br>
-`$ ngrok authtoken {自己的authtoken}`
+输入下面指令，{MyAuthtoken}就是前面得到那个authtoken<br>
+```java
+ngrok authtoken {MyAuthtoken}
+```
 ### 第五步
 启动自己的本地服务，端口号默认是8080<br>
 8080端口向外部公开<br>
-`$ ngrok http 8080`
-
+```java
+ngrok http 8080
+```
 ### 第六步
 外网访问，搞定
