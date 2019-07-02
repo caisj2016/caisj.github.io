@@ -260,13 +260,13 @@
 <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span> <span class="nx">renderer</span><span class="p">.</span><span class="nx">domElement</span> <span class="p">);</span>
 </code></pre></div></div>
 
-<p>创建渲染器实例，设置渲染应用程序的大小，对于性能密集型应用程序，可以为setSize提供较小的值，例如window.innerWidth / 2和window.innerHeight / 2，这将使应用程序呈现为一半大小。
+<p>创建渲染器实例，设置渲染应用程序的大小。<br />对于性能密集型应用程序，可以为setSize提供较小的值，例如window.innerWidth / 2和window.innerHeight / 2，这将使应用程序呈现为一半大小。<br />
 然后将渲染器元素添加到HTML文档中。</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">geometry</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">BoxGeometry</span><span class="p">(</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="p">);</span>
 <span class="kd">var</span> <span class="nx">material</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">MeshBasicMaterial</span><span class="p">(</span> <span class="p">{</span> <span class="na">color</span><span class="p">:</span> <span class="mh">0x00ff00</span> <span class="p">}</span> <span class="p">);</span>
 </code></pre></div></div>
-<p>建立一个1:1:1的立方体
+<p>建立一个1:1:1的立方体<br />
 设置为0x00ff00(绿色)的颜色属性。</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">cube</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Mesh</span><span class="p">(</span> <span class="nx">geometry</span><span class="p">,</span> <span class="nx">material</span> <span class="p">);</span>

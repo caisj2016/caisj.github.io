@@ -106,14 +106,14 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 ```
 
-创建渲染器实例，设置渲染应用程序的大小，对于性能密集型应用程序，可以为setSize提供较小的值，例如window.innerWidth / 2和window.innerHeight / 2，这将使应用程序呈现为一半大小。
+创建渲染器实例，设置渲染应用程序的大小。<br>对于性能密集型应用程序，可以为setSize提供较小的值，例如window.innerWidth / 2和window.innerHeight / 2，这将使应用程序呈现为一半大小。<br>
 然后将渲染器元素添加到HTML文档中。
 
 ``` js
 var geometry = new THREE.BoxGeometry( 1, 1, 1 );
 var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 ```
-建立一个1:1:1的立方体
+ 建立一个1:1:1的立方体<br>
 设置为0x00ff00(绿色)的颜色属性。
 
 ``` js
