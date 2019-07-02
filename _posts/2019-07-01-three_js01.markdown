@@ -1,0 +1,161 @@
+---
+layout:     post
+title:      "three.js的学习-01"
+subtitle:   "web3D效果简单做成"
+date:       2019-07-01 08:42:00
+author:     "Cai"
+header-img: "img/web3d-bg.jpg"
+tags:
+    - JS
+    - 技术
+
+---
+# 前言
+想做一个基于gps信息的webAR的东西。找了找，找到了这个技术three.js，那么就学习一下。
+
+# three.js
+three.js作为WebGL中的一种。
+可以在2D显示器上正确地绘制虚拟3D空间中的对象。主要利用html5的CanvasRenderer技术。
+
+# 这个就是一个完整demo程序
+
+ ``` js
+ <html>
+ 	<head>
+ 		<title>My first three.js app</title>
+ 		<style>
+ 			body { margin: 0; }
+ 			canvas { width: 100%; height: 100% }
+ 		</style>
+ 	</head>
+ 	<body>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
+ 		<script>
+ 			var scene = new THREE.Scene();
+ 			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+
+ 			var renderer = new THREE.WebGLRenderer();
+ 			renderer.setSize( window.innerWidth, window.innerHeight );
+ 			document.body.appendChild( renderer.domElement );
+
+ 			var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+ 			var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+ 			var cube = new THREE.Mesh( geometry, material );
+ 			scene.add( cube );
+
+ 			camera.position.z = 3;
+
+ 			var animate = function () {
+ 				requestAnimationFrame( animate );
+
+ 				cube.rotation.x += 0.01;
+ 				cube.rotation.y += 0.01;
+
+ 				renderer.render( scene, camera );
+ 			};
+
+ 			animate();
+ 		</script>
+ 	</body>
+ </html>
+ ```
+# 执行的实际效果
+![サンプル](/img/in-post/three-01/3ddemo.jpg)
+ - - - -
+# 接下来对于demo程序的深度解析
+#### 开始
+ ``` js
+ <html>
+   <head>
+     <title>My first three.js app</title>
+     <style>
+       body { margin: 0; }
+       canvas { width: 100%; height: 100% }
+     </style>
+   </head>
+   <body>
+ ```
+ 这个是网站的头，没啥好说的，继续往下看
+``` js
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
+ ```
+ 导入js，没啥好说的，继续往下看
+#### 创建场景
+``` js
+var scene = new THREE.Scene();
+```
+
+建立一个场景，后面会用到
+ ``` js
+var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+```
+THREE.PerspectiveCamera ( fov, aspect, near, far )
+- :fov <float>[= 50]
+|视角。单位是度。镜头越小，距离越小（视场越小，视角越小）。  
+- :aspect <float>[= 1]
+|屏幕宽高比。通常按屏幕宽度÷屏幕高度计算。
+- :near <float>[= 0.1]
+|不绘制此值范围之前的区域。  
+- :far <float>[= 2000]
+|不绘制此值范围以内的区域。
+<br>建立一个观看的镜头
+
+``` js
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
+```
+
+创建渲染器实例，设置渲染应用程序的大小，对于性能密集型应用程序，可以为setSize提供较小的值，例如window.innerWidth / 2和window.innerHeight / 2，这将使应用程序呈现为一半大小。
+然后将渲染器元素添加到HTML文档中。
+
+``` js
+var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+```
+建立一个1:1:1的立方体
+设置为0x00ff00(绿色)的颜色属性。
+
+``` js
+var cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
+```
+Mesh( geometry : Geometry, material : Material )<br>
+Mesh的构造方法，形状和材质<br>
+插入到场景中
+``` js
+camera.position.z = 3;
+```
+调整镜头，数值越大看到的模型越小。
+####  渲染场景
+
+``` js
+var animate = function () {
+  requestAnimationFrame( animate );
+
+  cube.rotation.x += 0.01;
+  cube.rotation.y += 0.01;
+
+  renderer.render( scene, camera );
+};
+
+animate();
+```
+其实就是下面的这么一个固定结构
+``` js
+function animate() {
+	requestAnimationFrame( animate );
+	renderer.render( scene, camera );
+}
+animate();
+```
+递归调用 animate（）做一个循环
+``` js
+cube.rotation.x += 0.01;
+cube.rotation.y += 0.01;
+```
+把动作内容加上，旋转。
+
+### 总结
+这么一个基于web，3D模型的显示就完成了。快动起手吧。<br>
+参考资料:[three.js:Creating a scene](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
