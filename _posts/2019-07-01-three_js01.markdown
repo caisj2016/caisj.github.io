@@ -90,16 +90,19 @@ var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
 ```
 THREE.PerspectiveCamera ( fov, aspect, near, far )
-- :fov <float>[= 50]
+- :fov <float>[= 75]
 |视角。单位是度。镜头越小，距离越小（视场越小，视角越小）。  
 - :aspect <float>[= 1]
 |屏幕宽高比。通常按屏幕宽度÷屏幕高度计算。
 - :near <float>[= 0.1]
 |不绘制此值范围之前的区域。  
-- :far <float>[= 2000]
-|不绘制此值范围以内的区域。
-<br>建立一个观看的镜头
+- :far <float>[= 1000]
+|不绘制此值范围以外的区域。<br>
 
+建立一个观看的镜头。near和far可能比较难理解，请看下面这个图↓
+
+![camera](/img/in-post/three-01/camera.jpg)
+#### 创建渲染器
 ``` js
 var renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
@@ -108,7 +111,7 @@ document.body.appendChild( renderer.domElement );
 
 创建渲染器实例，设置渲染应用程序的大小。<br>对于性能密集型应用程序，可以为setSize提供较小的值，例如window.innerWidth / 2和window.innerHeight / 2，这将使应用程序呈现为一半大小。<br>
 然后将渲染器元素添加到HTML文档中。
-
+#### 建立模型
 ``` js
 var geometry = new THREE.BoxGeometry( 1, 1, 1 );
 var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );

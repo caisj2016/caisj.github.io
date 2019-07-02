@@ -244,17 +244,20 @@
 </code></pre></div></div>
 <p>THREE.PerspectiveCamera ( fov, aspect, near, far )</p>
 <ul>
-  <li>:fov <float>[= 50]
+  <li>:fov <float>[= 75]
 |视角。单位是度。镜头越小，距离越小（视场越小，视角越小）。</float></li>
   <li>:aspect <float>[= 1]
 |屏幕宽高比。通常按屏幕宽度÷屏幕高度计算。</float></li>
   <li>:near <float>[= 0.1]
 |不绘制此值范围之前的区域。</float></li>
-  <li>:far <float>[= 2000]
-|不绘制此值范围以内的区域。
-<br />建立一个观看的镜头</float></li>
+  <li>:far <float>[= 1000]
+|不绘制此值范围以外的区域。<br /></float></li>
 </ul>
 
+<p>建立一个观看的镜头。near和far可能比较难理解，请看下面这个图↓</p>
+
+<p><img src="/img/in-post/three-01/camera.jpg" alt="camera" /></p>
+<h4 id="创建渲染器">创建渲染器</h4>
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">renderer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">WebGLRenderer</span><span class="p">();</span>
 <span class="nx">renderer</span><span class="p">.</span><span class="nx">setSize</span><span class="p">(</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span><span class="p">,</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span> <span class="p">);</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span> <span class="nx">renderer</span><span class="p">.</span><span class="nx">domElement</span> <span class="p">);</span>
@@ -262,7 +265,7 @@
 
 <p>创建渲染器实例，设置渲染应用程序的大小。<br />对于性能密集型应用程序，可以为setSize提供较小的值，例如window.innerWidth / 2和window.innerHeight / 2，这将使应用程序呈现为一半大小。<br />
 然后将渲染器元素添加到HTML文档中。</p>
-
+<h4 id="建立模型">建立模型</h4>
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">geometry</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">BoxGeometry</span><span class="p">(</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="p">);</span>
 <span class="kd">var</span> <span class="nx">material</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">MeshBasicMaterial</span><span class="p">(</span> <span class="p">{</span> <span class="na">color</span><span class="p">:</span> <span class="mh">0x00ff00</span> <span class="p">}</span> <span class="p">);</span>
 </code></pre></div></div>
