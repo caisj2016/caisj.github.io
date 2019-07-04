@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "three.js的学习-01"
+title:      "three.js的学习笔记"
 subtitle:   "web3D效果简单做成"
 date:       2019-07-01 08:42:00
 author:     "Cai"

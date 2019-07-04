@@ -1,0 +1,208 @@
+---
+layout:     post
+title:      "WebApi的学习笔记"
+subtitle:   "HttpClient和restTemplate比较"
+date:       2019-07-03 08:42:00
+author:     "Cai"
+header-img: "img/home-bg-o.jpg"
+tags:
+    - JS
+    - 技术
+
+---
+# 前言
+想调用一个webapi，以前都是用封装好的库，不求甚解，今天自己做的时候，遇到了麻烦。<br>
+找到了一个非常简单的restTemplate的方法，和我之前用的HttpClient有些区别，<br>今天就把
+二种方法做一个比较。
+
+# HttpClient
+Apache HttpComponents的HttpClient
+# Java的HttpClient例子
+
+ ``` java
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import org.apache.http.HttpStatus;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
+
+/**
+ * HttpClientsの例子
+ */
+class httpClients
+{
+    static String uri_get_proc(String uri)
+        {
+        String res = "";
+        Charset charset = StandardCharsets.UTF_8;
+
+        CloseableHttpClient httpclient = HttpClients.createDefault();
+        HttpGet request = new HttpGet(uri);
+
+        System.out.println
+            ("request执行「" + request.getRequestLine() + "」");
+
+        CloseableHttpResponse response = null;
+
+        try {
+            response = httpclient.execute(request);
+
+            int status = response.getStatusLine().getStatusCode();
+            System.out.println("HTTP:状态" + status);
+            //HTTP状态:200
+
+            if (status == HttpStatus.SC_OK){                
+                res = EntityUtils.toString(response.getEntity(),charset);               
+            }
+        } catch (ClientProtocolException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (response != null) {
+                    response.close();
+                }
+                if (httpclient != null) {
+                    httpclient.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return res;
+    }
+}
+
+// -----------------------------------------------------------------------
+public class Http_get
+{
+    public static void main(String[] args)
+    {
+        //uri 发生请求的地址
+        String uri = "http://XXXXXXXXXXXX";
+
+        String res = httpClients.uri_get_proc(uri);
+        // res就是这个返回结果，然后再对这个res转换成对象
+        //TODO
+        System.out.println(res);
+    }
+}
+ ```
+
+# 接下来对于demo程序的解析
+#### 建立一个请求内容
+``` java
+
+String res = "";
+Charset charset = StandardCharsets.UTF_8;
+
+CloseableHttpClient httpclient = HttpClients.createDefault();
+HttpGet request = new HttpGet(uri);
+
+```
+把传进来的地址，放到httpclient里面，构建一个get请求
+#### 执行请求
+``` java
+response = httpclient.execute(request);
+```
+
+#### 对请求的返回值做判断
+``` java
+  int status = response.getStatusLine().getStatusCode();
+  System.out.println("HTTP:状态" + status);
+  //HTTP状态:200
+
+    if (status == HttpStatus.SC_OK){                
+        res = EntityUtils.toString(response.getEntity(),charset);               
+    }
+} catch (ClientProtocolException e) {
+e.printStackTrace();
+} catch (UnsupportedEncodingException e) {
+e.printStackTrace();
+} catch (IOException e) {
+e.printStackTrace();
+} finally {
+try {
+    if (response != null) {
+        response.close();
+    }
+    if (httpclient != null) {
+        httpclient.close();
+    }
+} catch (IOException e) {
+    e.printStackTrace();
+}
+```
+ - - - - - - - -
+# restTemplate
+RestTemplate是一个提供调用REST API（Web API）的方法的类，它是Spring Framework提供的HTTP客户端。
+
+``` java
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+public class restTemplateService {
+
+  @Autowired
+  RestTemplate restTemplate;
+
+  static public ZipCodeDto service(String zipcode) {
+    //请求的核心部分
+    ResponseEntity<ZipCodeDto> resp =restTemplate.getForEntity(URL, ZipCodeDto.class, zipcode);
+    //返回对象
+     return resp.getStatusCode() == HttpStatus.OK ? resp.getBody() : null;
+  }
+
+  // -----------------------------------------------------------------------
+  public class Http_get
+  {
+      public static void main(String[] args)
+      {
+        /** URL */
+        private static final String URL  = "http://zipcloud.ibsnet.co.jp/api/search?zipcode={zipcode}"；
+          String zipcode = "123";
+          ZipCodeDto zipCodeDto = restTemplateService.service(URL,ZipCodeDto.class,zipcode);
+      }
+  }
+}
+```
+# 接下来对于demo程序的解析
+
+#### 建立一个请求内容并请求
+``` java
+//请求的核心部分
+ResponseEntity<ZipCodeDto> resp =restTemplate.getForEntity(URL, ZipCodeDto.class, zipcode);
+
+```
+通过看API可以知道<br>
+``` Java
+ <T> ResponseEntity<T> getForEntity(String url, Class<T> responseType, Object... urlVariables)
+```
+- url :[URL]是请求地址
+- responseType :[ZipCodeDto.class]转换的对象
+- urlVariables :[zipcode]请求参数
+
+#### 对请求的返回值做判断
+``` java
+   return resp.getStatusCode() == HttpStatus.OK ? resp.getBody() : null;
+```
+ - - - - - - - -
+
+### 总结
+通过对比可以发现restTemplate比较HttpClients代码量上要少很多，其实主要是少了对于HttpClient的初始化和对于EXceptions的处理，还有最后的对象转换。在明确转换对象的前提下，restTemplate还是方便很多的。
+
+### 追加
+这次主要是对于get请求的对比，更多restTemolate的知识<br>
+请参考: [https://www.baeldung.com/rest-template](https://www.baeldung.com/rest-template)
