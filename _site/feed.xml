@@ -5,24 +5,84 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 05 Aug 2019 12:00:14 +0900</pubDate>
-    <lastBuildDate>Mon, 05 Aug 2019 12:00:14 +0900</lastBuildDate>
+    <pubDate>Tue, 17 Sep 2019 12:42:43 +0900</pubDate>
+    <lastBuildDate>Tue, 17 Sep 2019 12:42:43 +0900</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>新目标</title>
+        <description>&lt;h1 id=&quot;前话&quot;&gt;前话&lt;/h1&gt;
+&lt;p&gt;周六提交了纪要，我身上的担子突然就卸下来。昨天玩了一天，玩到凌晨二点，不想第二天的上班。&lt;br /&gt;
+猴哥要去面试，拿了些题来，我发现我都做不出来，非常尴尬，难得不行，一些简单，其实概念也没&lt;br /&gt;
+又清楚的掌握。常年的cv党让我放弃了去思考，但是要学习的东西太多，就不免有为难的情绪。&lt;br /&gt;
+水这个东西也许能蒙骗别人，但是骗不了自己。其实在对话间，我其实很清楚自己很水，但又不想去努力。
+对的，不想去努力。&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;偶然&quot;&gt;偶然&lt;/h1&gt;
+&lt;p&gt;昨天深夜，老师发来一个纪要里面确认姓名顺序的邮件。什么是名在姓前面，我写的不对要修改啥的，
+修改完后，我就Google了下老郭的名字，想看看老郭的论文啥的。
+果然，一大推信息出现了，又偶然就看到了leecode的记录，805题。我并没有感到吃惊，
+反而很惭愧，或许这就是不被看上的理由把。或许这也是我喜欢的理由把。这就是
+我喜欢的东西把。我苦苦找寻喜欢的东西，喜欢的生活，我喜欢的不就是这个嘛。
+我的脸感觉到很热，昨夜熬夜的疲惫感消失了，大脑似乎分泌了什么，很舒服。&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;好きですげと、追いつかない&lt;br /&gt;
+足を止めていただかない&lt;br /&gt;
+ななた走る姿好きから&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;总结&quot;&gt;总结&lt;/h1&gt;
+&lt;p&gt;一蹴而就，投机取巧是我经常幻想的。现实现实的说明了现实的现实，就是现实的。&lt;br /&gt;
+反省再反省之后，在一次次询问自己内心之后，其实喜欢的东西，就在你眼前。&lt;br /&gt;
+既然，这就是喜欢的，那还要什么理由说没有努力的目标呢。那个耍废的我，不是&lt;br /&gt;
+真实内心的我，只是套娃的表面。先只考虑怎么努力，再去考虑努力后能干什么，&lt;br /&gt;
+对于我个人来说可能更加适合，对于现在就要面试的猴哥，我还相对有多一点的时间。&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;もし、近くなった、連れてって。嬉しかったです。&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 16 Sep 2019 18:42:00 +0900</pubDate>
+        <link>http://localhost:4000/2019/09/16/goals/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/09/16/goals/</guid>
+        
+        <category>生活</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>9月计划</title>
+        <description>&lt;h1 id=&quot;杂谈&quot;&gt;杂谈&lt;/h1&gt;
+&lt;p&gt;其实1个月之间，我写了好多文章，很多都是内心的东西，写出来，其实就是想让内心的自己和
+自己来一次对话。&lt;br /&gt;
+坏的来说，没啥进步，好的来说，我更加了解自己了，更加清楚自己想要什么和不想要什么了，&lt;br /&gt;
+明白了自己的弱点。未来的方向还是存在问题，因为发现自己所在做的事情，并不是自己喜欢的&lt;br /&gt;
+事情。
+现在的情况，动不起来，无论是学习还是运动。没啥动力，去前进。&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Sep 2019 17:42:00 +0900</pubDate>
+        <link>http://localhost:4000/2019/09/11/plan-9/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/09/11/plan-9/</guid>
+        
+        <category>生活</category>
+        
+        
+      </item>
     
       <item>
         <title>8月计划</title>
         <description>&lt;h1 id=&quot;杂谈&quot;&gt;杂谈&lt;/h1&gt;
-&lt;p&gt;7月可以说是彻底的失败。做一件事情不能很快的得到结果，然后就放弃了。
-这个可能是我最大的问题。因为我想得到只是结果而已。我最大的兴趣还是玩游戏和撸管，
-因为这个是最快的能得到快感的。其他的似乎都不行。我觉得应该认清自己。
-8月只做三件事情
-1.学习java (白天)
-2.健身
-3.完成学校的课题
-不考虑以外的任何事情，不关心以外任何事情，不做以外任何事情。&lt;/p&gt;
+&lt;p&gt;7月可以说是彻底的失败。做一件事情不能很快的得到结果，然后就放弃了。&lt;br /&gt;
+这个可能是我最大的问题。因为我想得到只是结果而已。我最大的兴趣还是玩游戏和撸管，&lt;br /&gt;
+因为这个是最快的能得到快感的。其他的似乎都不行。我觉得应该认清自己。&lt;br /&gt;
+8月只做三件事情&lt;br /&gt;
+1.学习java (白天)&lt;br /&gt;
+2.健身&lt;br /&gt;
+3.完成学校的课题&lt;br /&gt;
+不考虑以外的任何事情，不关心以外任何事情，不做以外任何事情。&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;计划&quot;&gt;计划&lt;/h1&gt;
-&lt;p&gt;8月计划 0805～0901&lt;/p&gt;
+&lt;p&gt;8月计划 0805～0901&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;月 （会議）23時～24時 自由  24:00睡觉&lt;/li&gt;
   &lt;li&gt;火、水、木、金　(不加班的话) 2*4=8h
@@ -32,12 +92,12 @@
       &lt;li&gt;水 金 22時～24時 自由  24:00睡觉&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;土
+  &lt;li&gt;土&lt;br /&gt;
     &lt;ul&gt;
       &lt;li&gt;朝（会議）13時～18時図書館　18時～24時 自由　5h&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;日
+  &lt;li&gt;日&lt;br /&gt;
     &lt;ul&gt;
       &lt;li&gt;10時～12時 项目　 2h&lt;/li&gt;
       &lt;li&gt;12時～14時 自由&lt;/li&gt;
@@ -50,11 +110,11 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;从计划的角度来说，我觉得7月的计划没有什么大的问题。执行方面的不足。
-然后每天花10分钟时间记录一下，做了什么。我觉得有必要。
-没有东西是一下子达成的，总是很在乎结果和目的，就会一直在找方法，
-而不是去执行，摸索中前行，即使看上去很蠢，也至少是在努力了。
-8月我会去控制饮食，目标体重68kg。&lt;/p&gt;
+&lt;p&gt;从计划的角度来说，我觉得7月的计划没有什么大的问题。执行方面的不足。&lt;br /&gt;
+然后每天花10分钟时间记录一下，做了什么。我觉得有必要。&lt;br /&gt;
+没有东西是一下子达成的，总是很在乎结果和目的，就会一直在找方法，&lt;br /&gt;
+而不是去执行，摸索中前行，即使看上去很蠢，也至少是在努力了。&lt;br /&gt;
+8月我会去控制饮食，目标体重68kg。&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Aug 2019 17:42:00 +0900</pubDate>
         <link>http://localhost:4000/2019/08/04/plan-8/</link>
@@ -677,52 +737,6 @@ Mesh的构造方法，形状和材质&lt;br /&gt;
         <category>技术</category>
         
         <category>AR</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>6月计划</title>
-        <description>&lt;h2 id=&quot;空间&quot;&gt;空间&lt;/h2&gt;
-&lt;p&gt;这是一个独立的空间，可以记录生活的点点滴滴。真好。&lt;/p&gt;
-
-&lt;h2 id=&quot;计划&quot;&gt;计划&lt;/h2&gt;
-&lt;p&gt;现在的我其实很忙，但是我又忙不起来，啥都不想做。我想把所有要做的事情再列一下&lt;br /&gt;然后明确到底要做什么内容&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;研究生课题（这个可能可以再细分，但是这个是我现在一直在做调查，但是真的实施和写论文，实在有点工程量太大，所以就有点不知所措）&lt;/li&gt;
-  &lt;li&gt;机器学习，强化学习，深度学习 的学习（有点迷茫，不知道以后的发展是如何，总感觉ai是趋势，总感觉要学啊）&lt;/li&gt;
-  &lt;li&gt;锻炼（锻炼现在是很认真的在坚持，说实话效果不明显，理由我也知道，时间还不够不能够改变，饮食习惯是根本，但是不吃糖多吃蔬菜实在是吃力啊）&lt;/li&gt;
-  &lt;li&gt;女朋友(这个东西，年纪大了，肯定是需要的，我也有计划大概就是明后年，30岁还没经验实在有点说不过去，但是现在真的是没什么时间)&lt;/li&gt;
-  &lt;li&gt;旅游(想出去走的，没有伴，又没有动力，或者说是没意思，迟迟没有计划，emm，等想找女朋友的时候吧，再考虑这个问题)&lt;/li&gt;
-  &lt;li&gt;睡觉(这东西，也要计划吗，感觉还是要的，现在平时是不玩游戏了，但是还是1点多睡觉，第二天早饭基本吃不到，选择二天是早睡日，大概就是周二和周日把)&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Thu, 13 Jun 2019 20:51:00 +0900</pubDate>
-        <link>http://localhost:4000/2019/06/13/plan-6/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/13/plan-6/</guid>
-        
-        <category>生活</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>第一篇</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;“猴哥牛逼. ”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;口号&quot;&gt;口号&lt;/h1&gt;
-&lt;p&gt;每天起床第一句，猴哥牛逼&lt;/p&gt;
-
-&lt;p&gt;一阵瞎搞瞎弄之后，我也总算建立完成了一个能看的网站吧，虽然设计是用别人的。
-差不多了呀。&lt;/p&gt;
-</description>
-        <pubDate>Wed, 12 Jun 2019 22:51:00 +0900</pubDate>
-        <link>http://localhost:4000/2019/06/12/hello2019/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/12/hello2019/</guid>
-        
-        <category>生活</category>
         
         
       </item>
