@@ -208,22 +208,22 @@
         <span class="nc">CloseableHttpResponse</span> <span class="n">response</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
 
         <span class="k">try</span> <span class="o">{</span>
-            <span class="n">response</span> <span class="o">=</span> <span class="n">httpclient</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="n">request</span><span class="o">);</span>
+              <span class="n">response</span> <span class="o">=</span> <span class="n">httpclient</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="n">request</span><span class="o">);</span>
 
-            <span class="kt">int</span> <span class="n">status</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="na">getStatusLine</span><span class="o">().</span><span class="na">getStatusCode</span><span class="o">();</span>
-            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"HTTP:状态"</span> <span class="o">+</span> <span class="n">status</span><span class="o">);</span>
-            <span class="c1">//HTTP状态:200</span>
+              <span class="kt">int</span> <span class="n">status</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="na">getStatusLine</span><span class="o">().</span><span class="na">getStatusCode</span><span class="o">();</span>
+              <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"HTTP:状态"</span> <span class="o">+</span> <span class="n">status</span><span class="o">);</span>
+              <span class="c1">//HTTP状态:200</span>
 
-            <span class="k">if</span> <span class="o">(</span><span class="n">status</span> <span class="o">==</span> <span class="nc">HttpStatus</span><span class="o">.</span><span class="na">SC_OK</span><span class="o">){</span>                
-                <span class="n">res</span> <span class="o">=</span> <span class="nc">EntityUtils</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">response</span><span class="o">.</span><span class="na">getEntity</span><span class="o">(),</span><span class="n">charset</span><span class="o">);</span>               
-            <span class="o">}</span>
-        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">ClientProtocolException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
-        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">UnsupportedEncodingException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
-        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
-        <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+              <span class="k">if</span> <span class="o">(</span><span class="n">status</span> <span class="o">==</span> <span class="nc">HttpStatus</span><span class="o">.</span><span class="na">SC_OK</span><span class="o">){</span>                
+                  <span class="n">res</span> <span class="o">=</span> <span class="nc">EntityUtils</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">response</span><span class="o">.</span><span class="na">getEntity</span><span class="o">(),</span><span class="n">charset</span><span class="o">);</span>               
+              <span class="o">}</span>
+            <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">ClientProtocolException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+            <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">UnsupportedEncodingException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+            <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+            <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
             <span class="k">try</span> <span class="o">{</span>
                 <span class="k">if</span> <span class="o">(</span><span class="n">response</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
                     <span class="n">response</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
@@ -348,7 +348,7 @@
 </ul>
 
 <h4 id="对请求的返回值做判断-1">对请求的返回值做判断</h4>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="k">return</span> <span class="n">resp</span><span class="o">.</span><span class="na">getStatusCode</span><span class="o">()</span> <span class="o">==</span> <span class="nc">HttpStatus</span><span class="o">.</span><span class="na">OK</span> <span class="o">?</span> <span class="n">resp</span><span class="o">.</span><span class="na">getBody</span><span class="o">()</span> <span class="o">:</span> <span class="kc">null</span><span class="o">;</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="n">resp</span><span class="o">.</span><span class="na">getStatusCode</span><span class="o">()</span> <span class="o">==</span> <span class="nc">HttpStatus</span><span class="o">.</span><span class="na">OK</span> <span class="o">?</span> <span class="n">resp</span><span class="o">.</span><span class="na">getBody</span><span class="o">()</span> <span class="o">:</span> <span class="kc">null</span><span class="o">;</span>
 </code></pre></div></div>
 <hr />
 
@@ -399,13 +399,13 @@
                     <div class="tags">
         				
                             
-                				<a href="/archive/#生活" title="生活" rel="7">
+                				<a href="/archive/#生活" title="生活" rel="9">
                                     生活
                                 </a>
                             
         				
                             
-                				<a href="/archive/#技术" title="技术" rel="5">
+                				<a href="/archive/#技术" title="技术" rel="6">
                                     技术
                                 </a>
                             
@@ -418,6 +418,10 @@
                 				<a href="/archive/#JS" title="JS" rel="3">
                                     JS
                                 </a>
+                            
+        				
+                            
+        				
                             
         				
         			</div>

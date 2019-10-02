@@ -51,22 +51,22 @@ class httpClients
         CloseableHttpResponse response = null;
 
         try {
-            response = httpclient.execute(request);
+              response = httpclient.execute(request);
 
-            int status = response.getStatusLine().getStatusCode();
-            System.out.println("HTTP:状态" + status);
-            //HTTP状态:200
+              int status = response.getStatusLine().getStatusCode();
+              System.out.println("HTTP:状态" + status);
+              //HTTP状态:200
 
-            if (status == HttpStatus.SC_OK){                
-                res = EntityUtils.toString(response.getEntity(),charset);               
-            }
-        } catch (ClientProtocolException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
+              if (status == HttpStatus.SC_OK){                
+                  res = EntityUtils.toString(response.getEntity(),charset);               
+              }
+            } catch (ClientProtocolException e) {
+                e.printStackTrace();
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
             try {
                 if (response != null) {
                     response.close();
@@ -196,7 +196,7 @@ ResponseEntity<ZipCodeDto> resp =restTemplate.getForEntity(URL, ZipCodeDto.class
 
 #### 对请求的返回值做判断
 ``` java
-   return resp.getStatusCode() == HttpStatus.OK ? resp.getBody() : null;
+return resp.getStatusCode() == HttpStatus.OK ? resp.getBody() : null;
 ```
  - - - - - - - -
 

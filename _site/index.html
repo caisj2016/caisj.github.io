@@ -154,6 +154,86 @@
             ">
     			
 <div class="post-preview">
+    <a href="/2019/10/02/java-1/">
+        <h2 class="post-title">
+            Thinking in Java 学习笔记
+        </h2>
+        
+        <h3 class="post-subtitle">
+            堆分代（年轻代，老年代）
+        </h3>
+        
+        <div class="post-content-preview">
+            堆分代（年轻代，老年代）
+
+1，为什么需要把堆分代？
+分代的唯一理由就是优化GC性能
+
+如果没有分代，所有的对象都在一块，GC的时要找到哪些对象是没用的，这样就会对堆的所有区域进行扫描。而我们的很多对象都是朝生夕死的。
+如果分代的话，把新创建的对象放到某一地方，当GC的时先把这块存“朝生夕死”对象的区域进行回收，这样就会腾出很大的空间出来。
+2，Minor GC、Major GC和Full ...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Cai on October 2, 2019
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2019/10/01/plan-10/">
+        <h2 class="post-title">
+            10月计划
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            本文
+10月到了，写一下10月计划把。
+本月的核心目标是完成研究生课题的程序。
+目前还是不知道如何去写这个程序，没有比较好的算法基础是硬伤。
+现在要补充算法，感觉有点来不及了，实际一点为了解决问题去努力。
+恢复健身，适当去运动一下，调节一下激素分泌，暂时不追求体型上的改造，
+要去控制饮食，实在是花精力和意志力。意志力薄弱的我，还是大口吃肉把。
+晚上12点前睡觉，生理上已经出现不适，虽然没有在...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Cai on October 1, 2019
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2019/09/19/diary/">
+        <h2 class="post-title">
+            0920有感
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            本文
+短时间大量更新了很多自己的感想，其实就是想让自己明确自己的想法。
+确立自己正确的价值观念，然后去执行。
+先说一下，这几天晚上都有执行去学习，晚上也有早睡，早上也没有赖床，精神状态恢复了。
+我喜欢这种感觉，那个讨厌的自己似乎躲起来了。
+关于leecode，我看到老郭的800题实在是大受打击，于是定下了一个月30道，当然懂得觉得
+这个是很可笑的，因为30到一个月我可能3年才能做完。但是我发...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Cai on September 19, 2019
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     <a href="/2019/09/16/goals/">
         <h2 class="post-title">
             新目标
@@ -352,100 +432,6 @@ import java.io.IOExcept...
 </div>
 <hr>
 
-<div class="post-preview">
-    <a href="/2019/07/01/three_js01/">
-        <h2 class="post-title">
-            three.js的学习笔记
-        </h2>
-        
-        <h3 class="post-subtitle">
-            web3D效果简单做成
-        </h3>
-        
-        <div class="post-content-preview">
-            前言
-想做一个基于gps信息的webAR的东西。找了找，找到了这个技术three.js，那么就学习一下。
-
-three.js
-three.js作为WebGL中的一种。
-可以在2D显示器上正确地绘制虚拟3D空间中的对象。主要利用html5的CanvasRenderer技术。
-
-这个就是一个完整demo程序
-
- &lt;html&gt;
- 	&lt;head&gt;
- 		&lt;title&g...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Cai on July 1, 2019
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2019/06/25/ngrok/">
-        <h2 class="post-title">
-            ngrok的使用
-        </h2>
-        
-        <h3 class="post-subtitle">
-            内网穿透技术
-        </h3>
-        
-        <div class="post-content-preview">
-            前言
-想做一个chat bot，要一个外部公开的域名和服务，网上一查，花生壳，阿里云都要钱，好麻烦呀。
-本着能白嫖就白嫖的想法，在谷歌老师的帮助下，找到了ngrok，内网穿透技术。开心！
-
-ngrok是什么
-让你本地localhost，外部能公开访问的转换工具。下面就开始白嫖。
-第一步
-搞个账号   ngrok注册网站
-注册完会得到个authtoken ，这个东西后面要用。
-第二步
-下载ng...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Cai on June 25, 2019
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2019/06/17/AR/">
-        <h2 class="post-title">
-            AR介绍
-        </h2>
-        
-        <h3 class="post-subtitle">
-            识别方法/类型
-        </h3>
-        
-        <div class="post-content-preview">
-            AR识别方法/类型
-AR是Augmented Reality的简称，现实增强的技术。
-
-位置认知型AR
-通过手机等一些设备的GPS功能，获取位置的信息，显示AR。
-
-
-Marker型图像识别AR
-通过识别事先登录的Marker型图像，获取信息，显示AR。
-因为有固定的模型要求，所以识别起来比较快，稳定性高。
-
-
-无Marker型图像识别AR
-通过识别自由平面插图和图像（静止图像）的特征，获取...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Cai on June 17, 2019
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -476,13 +462,13 @@ Marker型图像识别AR
                     <div class="tags">
                         
                             
-                                <a href="/archive/#生活" title="生活" rel="7">
+                                <a href="/archive/#生活" title="生活" rel="9">
                                     生活
                                 </a>
                             
                         
                             
-                                <a href="/archive/#技术" title="技术" rel="5">
+                                <a href="/archive/#技术" title="技术" rel="6">
                                     技术
                                 </a>
                             
@@ -495,6 +481,10 @@ Marker型图像识别AR
                                 <a href="/archive/#JS" title="JS" rel="3">
                                     JS
                                 </a>
+                            
+                        
+                            
+                        
                             
                         
                     </div>
